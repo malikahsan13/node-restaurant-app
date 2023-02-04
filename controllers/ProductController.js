@@ -7,7 +7,7 @@ const addProduct = (req, res) => {
 }
 
 const updateProduct = (req, res) => {
-    Product_Model.update({where: {id: req.params.id}}, req.body)
+    Product_Model.update(req.body, {where: {id: req.params.id}})
     .then(() => 
         Product_Model.findOne({where: {id: req.params.id}})
         .then((product) => res.send(product))

@@ -11,6 +11,9 @@ const config = {
         DB_NAME: result.parsed.DB_NAME,
         DB_USERNAME: result.parsed.DB_USERNAME,
         DB_PASSWORD: result.parsed.DB_PASSWORD
+    },
+    KEY_CONFIG:{
+        SECRET_KEY: result.parsed.SECRET_KEY
     }
 }
 
